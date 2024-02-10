@@ -2,6 +2,8 @@
 
 ![Preview 1](preview1.jpg)
 
+<h3>link Deploy</h3>
+https://tarjeta-presentacion-jmgo.netlify.app/
 
 <h4>Resources</h4>
 
