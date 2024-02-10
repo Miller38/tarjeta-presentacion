@@ -1,0 +1,162 @@
+
+/* Importación de fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@500;600&display=swap');
+
+/* Reset de estilos */
+* {
+    margin: 0; /* Reset del margen a 0 */
+    padding: 0; /* Reset del relleno a 0 */
+    box-sizing: border-box; /* Utiliza el modelo de caja border-box para el cálculo del tamaño */
+    font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins como predeterminada */
+}
+
+/* Estilo para el cuerpo del documento */
+body {
+    display: flex; /* Usa el modelo de visualización flex */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Alinea los elementos horizontalmente al centro */
+    min-height: 100vh; /* Establece una altura mínima del 100% del viewport */
+    background: #E3E3D8; /* Fondo de color */
+}
+
+/* Estilo para la tarjeta */
+.card {
+    position: relative; /* Establece la posición relativa */
+    width: 250px; /* Ancho de la tarjeta */
+    height: 600px; /* Altura de la tarjeta */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 20px 30px 35px rgba(73,69,52,0.4); /* Sombra */
+}
+
+/* Estilo para el contenido dentro de la tarjeta */
+.card .content {
+    position: relative; /* Establece la posición relativa */
+    z-index: 100;
+    width: 100%; /* Ancho del contenido */
+    /* height: 100%;  */
+    border-radius: 10px; /* Borde redondeado */
+    display: flex; /* Usa el modelo de visualización flex */
+    flex-direction: column; /* Dirección de la disposición flex (columna) */
+    overflow: hidden; /* Oculta el contenido que desborde */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 20px; /* Relleno interno */
+    background: #fff;
+    box-shadow: 20px 30px 35px rgba(73,69,52,0.4); /* Sombra */
+}
+
+/* Estilo para las imágenes dentro del contenido de la tarjeta */
+.card .content .img {
+    height: 50%; /* Altura del 50% del contenedor padre */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilo para las imágenes dentro del contenido de la tarjeta */
+.card .content .img img {
+    position: relative; /* Establece la posición relativa */
+    width: 140px; /* Ancho de la imagen */
+    height: 140px; /* Altura de la imagen */
+    border-radius: 50%; /* Borde redondeado */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área asignada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra */
+}
+
+/* Estilo para el span dentro del contenido de la tarjeta */
+.card .content span {
+    position: absolute; /* Establece la posición absoluta */
+    width: 350px; /* Ancho del elemento */
+    height: 200px; /* Altura del elemento */
+    background: linear-gradient(to right, #112e42, #112e42); /* Fondo con degradado lineal */
+    transform: rotate(-35deg); /* Rotación del elemento */
+    top: -50px;   /* Establece la posición del elemento hacia arriba 50px desde la posición inicial */
+    left: -100px; /* Establece la posición del elemento hacia la izquierda 100px desde la posición inicial */
+    }
+
+    /* Estilo para el título h4 dentro del contenido de la tarjeta */
+    .card .content h4 {
+        font-size: 18px; /* Tamaño de la fuente */
+        color: #1a1919; /* Color del texto */
+        margin-bottom: 5px; /* Margen inferior */
+    }
+    
+    /* Estilo para el subtítulo h6 dentro del contenido de la tarjeta */
+    .card .content h6 {
+        font-size: 13px; /* Tamaño de la fuente */
+        color: #5e2066; /* Color del texto */
+    }
+    
+    /* Estilo para el párrafo dentro del contenido de la tarjeta */
+    .card .content p {
+        font-size: 13px; /* Tamaño de la fuente */
+        color: #1a161f; /* Color del texto */
+        margin-top: 10px; /* Margen superior */
+    }
+    
+    /* Estilo para el contenedor de enlaces dentro de la tarjeta */
+    .card .links {
+        position: absolute; /* Establece la posición absoluta */
+        z-index: 90; /* Índice z para estar sobre otros elementos */
+        width: 50px; /* Ancho del contenedor de enlaces */
+        display: flex; /* Usa el modelo de visualización flex */
+        flex-direction: column; /* Dirección de la disposición flex (columna) */
+        gap: 20px; /* Espacio entre los enlaces */
+        background: #ededed;/* Fondo con opacidad */
+        box-shadow: 2px 3px 5px rgba(73,69,52, 0.4); /* Sombra */
+        padding: 20px; /* Relleno interno */
+        align-items: center; /* Alinea los elementos verticalmente al centro */
+        right: 10px; /* Posición a la derecha */
+        top: 15px; /* Posición hacia arriba */
+        border-radius: 0 10px 10px 0; /* Borde redondeado */
+    }
+    
+    /* Estilo para el contenedor de enlaces cuando se pasa el ratón por encima de la tarjeta */
+    .card:hover .links {
+        right: -50px; /* Desplaza los enlaces hacia la izquierda */
+        border-radius: 0 10px 10px 0; /* Borde redondeado */
+        transition: 0.5s; /* Transición de animación */
+    }
+    
+    /* Estilo para los enlaces dentro del contenedor de enlaces */
+    .card .links a {
+        font-size: 20px; /* Tamaño de la fuente */
+        color: #3a3a3b; /* Color del texto */
+    }
+    
+    /* Estilos para los enlaces cuando se pasa el ratón por encima */
+    .card .links a:nth-child(1):hover {
+        color: #0a912a; /* Cambia el color del primer enlace */
+    }
+    
+    .card .links a:nth-child(2):hover {
+        color: #252626; /* Cambia el color del segundo enlace */
+    }
+    
+    .card .links a:nth-child(3):hover {
+        color: #0158ca; /* Cambia el color del tercer enlace */
+    }
+    
+    .card .links a:nth-child(4):hover {
+        color: #252626; /* Cambia el color del cuarto enlace */
+    }
+    
+    /* Reglas de medios para hacer el diseño más responsivo */
+@media only screen and (max-width: 300px) {
+    .card {
+        width: 100%; /* La tarjeta ocupa todo el ancho */
+        max-width: 300px; /* Ancho máximo de la tarjeta */
+        margin: 20px;
+    }
+
+    .card .content {
+        padding: 20px; /* Reducir el relleno interno */
+    }
+
+    .card .content .img img {
+        width: 50%; /* La imagen ocupa todo el ancho del contenedor */
+        height: auto; /* Altura automática */
+    }
+
+    .card .content span {
+        width: 400px; /* Ancho del elemento */
+        height: 190px; /* Altura del elemento */
+    }
+}
